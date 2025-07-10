@@ -39,8 +39,7 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h1 className="text-5xl md:text-7xl font-poppins font-bold mb-6">
-              Transform Your
-              <span className="gradient-text block">Fitness Journey</span>
+              <span className="gradient-text block">Fitness Journey with Raja</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
               Experience revolutionary 3D workout visualization, personalized nutrition plans, 
