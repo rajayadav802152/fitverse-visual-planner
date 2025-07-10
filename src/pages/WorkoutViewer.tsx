@@ -23,19 +23,19 @@ const ExerciseModel = ({ exercise, isPlaying }: { exercise: string; isPlaying: b
   return (
     <group>
       {/* Main body representation */}
-      <Box
+      <mesh
         ref={meshRef}
-        args={[1, 2, 0.5]}
         position={[0, 0, 0]}
         onPointerEnter={() => setHovered(true)}
         onPointerLeave={() => setHovered(false)}
       >
+        <boxGeometry args={[1, 2, 0.5]} />
         <meshStandardMaterial 
           color={hovered ? "#ef4444" : "#14b8a6"} 
           transparent 
           opacity={0.8} 
         />
-      </Box>
+      </mesh>
       
       {/* Arms */}
       <Box args={[0.2, 1, 0.2]} position={[-0.8, 0.5, 0]}>
